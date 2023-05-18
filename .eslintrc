@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "ecmaVersion": 6, "sourceType": "module" },
+  "plugins": ["react-hooks", "sort-destructure-keys"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-console": "warn",
+    "no-param-reassign": "error",
+    "no-var": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": false,
+        "noSortAlphabetically": false,
+        "reservedFirst": true,
+        "shorthandFirst": true,
+        "shorthandLast": false
+      }
+    ],
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "sort-keys": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect",
+      "pragma": "React"
+    }
+  }
+}
